@@ -1,40 +1,101 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  ol,
-  ul,
-  menu {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: "Open Sans", sans-serif;
-    /* шрифти берем з макету */
-    font-style: normal;
-    font-weight: 400;
-  }
-  
-  .container {
-    max-width: 1200px;
-    /* максимальна ширина береться з макету */
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* шрифти берем з макету */
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  /* максимальна ширина береться з макету */
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.time {
+  background-image: linear-gradient(114.21deg, #232323 20.08%, #000000 96.12%),
+    linear-gradient(114.21deg, #ffffff 20.08%, #dfe2e4 96.12%);
+}
+
+.timer__blur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  max-width: 821px;
+  width: 100%;
+  height: 821px;
+  background-image: radial-gradient(
+    271.01% 271.01% at 79.11% 17.6%,
+    rgba(255, 52, 7, 0) 0%,
+    rgba(250, 14, 14, 0.48) 100%
+  );
+}
+
+.blur {
+  filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.timer__time {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.timer__text {
+  width: 708px;
+  font-size: 50px;
+  text-align: center;
+  background: linear-gradient(
+    92.1deg,
+    #ffdea8 -92.57%,
+    #ffffff -2.73%,
+    #ffffff 98.6%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.timer__seconds {
+  font-weight: 900;
+  font-size: 125px;
+  line-height: 152px;
+
+  background: linear-gradient(32deg, #f9c704 27.24%, #f90404 338.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0px 4px 29px rgba(0, 0, 0, 0.2);
+}
