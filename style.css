@@ -37,24 +37,30 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-.time {
+.timer {
   background-image: linear-gradient(114.21deg, #232323 20.08%, #000000 96.12%),
     linear-gradient(114.21deg, #ffffff 20.08%, #dfe2e4 96.12%);
 }
+.timer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 .timer__blur {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  max-width: 821px;
+  max-width: 733px;
   width: 100%;
-  height: 821px;
-  background-image: radial-gradient(
-    271.01% 271.01% at 79.11% 17.6%,
-    rgba(255, 52, 7, 0) 0%,
-    rgba(250, 14, 14, 0.48) 100%
-  );
+  height: 100%;
+  background-image:url(./img/Ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 
 .blur {
@@ -70,7 +76,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .timer__text {
-  width: 708px;
+  width: 700px;
   font-size: 50px;
   text-align: center;
   background: linear-gradient(
@@ -98,4 +104,45 @@ body {
   display: block;
   margin: 0 auto;
   text-shadow: 0px 4px 29px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width:768px) {
+    .timer__blur{
+        min-width: 633px;
+        width: 100%;
+        max-height: 100%;
+    }
+}
+@media screen and (max-width:480px) {
+    .timer__blur{
+        min-width: 433px;
+        width: 100%;
+        max-height: 100%;
+    }
+    .timer__seconds{
+        font-size: 80px;
+    }
+    .timer__text{
+        font-size: 30px;
+    }
+    .timer__img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:320px) {
+    .timer__blur{
+        min-width: 300px;
+        width: 100%;
+        max-height: 100%;
+    }
+    .timer__seconds{
+        font-size: 60px;
+    }
+    .timer__text{
+        font-size: 27px;
+        max-width: 200px;
+        width: 100%;
+    }
+    .timer__img{
+        width: 318px;
+    }
 }
