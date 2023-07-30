@@ -25,13 +25,15 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="home">
       <div class="container">
         <nav class="nav">
-          <a class="logo" href="./img/logo.svg"></a>
+          <a class="logo" href="#home">
+            <img src="./img/logo.svg" alt="logo" class="nav__img" />
+          </a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">Головна</a>
+              <a class="nav__link nav--active" href="#">Головна</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Продукт</a>
@@ -61,21 +63,45 @@
               alt="small-image"
               class="small-img"
             />
-            <p class="remains__text">Залишилось 
+            <p class="remains__text">
+              Залишилось
               <span class="about__subtitle-number">68</span>
             </p>
-       
           </div>
         </div>
         <div class="programs__inner">
-        <div class="about__programs">
-          <a class="about__link" href="#">Youtube</a>
-          <a class="about__link" href="#">Vk</a>
-          <a class="about__link" href="#">Telegram</a>
-          <a class="about__link" href="#">Discord</a>
+          <div class="about__programs">
+            <a class="about__link" href="#">Youtube</a>
+            <a class="about__link" href="#">Vk</a>
+            <a class="about__link" href="#">Telegram</a>
+            <a class="about__link" href="#">Discord</a>
+          </div>
+          <button class="about__button">Купить!</button>
         </div>
-        <button class="about__button">Купить!</button>
       </div>
+    </section>
+
+    <section class="product">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="#home">
+            <img src="./img/logo.svg" alt="logo" class="nav__img" />
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Продукт</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Відгуки</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </section>
   </body>
