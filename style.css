@@ -349,6 +349,7 @@ body {
   .small-image {
     width: 121px;
     height: 137px;
+    justify-content: center;
   }
   .remains__text {
     font-size: 14px;
@@ -362,13 +363,12 @@ body {
 }
 /* product */
 .product {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #1e1e1e;
   padding-bottom: 90px;
 }
 .product__all-inner {
   display: flex;
-  height: 100vh;
 }
 .product__inner {
   display: flex;
@@ -532,34 +532,29 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  margin-bottom: 649px;
 }
 .big__logo2 {
   width: 132px;
   height: 659px;
   background-repeat: no-repeat;
-  top: 0px;
-  left: 0;
-  position: absolute;
-  margin-top: 280px;
 }
 .product__copyright {
   color: rgba(226, 226, 226, 0.33);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  text-align: center;
 }
 
 /* delivery */
 
 .delivery {
   background-color: #1e1e1e;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-bottom: 88px;
 }
 .delivery__all-inner {
   display: flex;
-  height: 100vh;
 }
 .delivery__inner {
   display: flex;
@@ -641,22 +636,21 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  margin-bottom: 649px;
 }
 .delivery__copyright {
   color: rgba(226, 226, 226, 0.33);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  text-align: center;
 }
 /* feedback */
 .feedback {
   background-color: #1e1e1e;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .feedback__all-inner {
   display: flex;
-  height: 100vh;
 }
 .feedback__inner {
   display: flex;
@@ -686,6 +680,40 @@ body {
   justify-content: space-between;
   padding: 50px;
   margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.feedback__descr-inner::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 603.656px;
+  height: 162.186px;
+  background-image: url(./img/arrows.svg);
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+
+.feedback_text {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 100;
+  margin-right: 158px;
+}
+.feedback__button {
+  color: #0d0d0d;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 100;
+  border-radius: 122px;
+  background: #f8c104;
+  cursor: pointer;
+  width: 341px;
+  height: 59px;
+  z-index: 1;
 }
 .feedback__contacts {
   display: flex;
@@ -727,11 +755,12 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  margin-bottom: 649px;
 }
 .feedback__copyright {
   color: rgba(226, 226, 226, 0.33);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  text-align: center;
+  padding-bottom: 32px;
 }
