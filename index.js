@@ -8,6 +8,16 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("menu__active");
 });
 
+const aboutButton = document.querySelector(".about__button");
+const aboutBuyInner = document.querySelector(".about__buy-inner");
+const aboutBuyClose = document.querySelector(".about__buy-close");
+aboutButton.addEventListener("click", () => {
+  aboutBuyInner.classList.toggle("about__active");
+});
+aboutBuyClose.addEventListener("click", () => {
+  aboutBuyInner.classList.toggle("about__active");
+});
+
 function startTimer() {
   let minutes = 1;
   let seconds = 10;
@@ -20,7 +30,7 @@ function startTimer() {
       timerElement.textContent = "00:00";
     } else if (seconds < 0) {
       minutes--;
-      seconds = 59;
+      seconds = 59; 
     }
   }, 1000);
   function formatTime(time) {
