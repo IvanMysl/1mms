@@ -17,7 +17,6 @@ aboutButton.addEventListener("click", () => {
 aboutBuyClose.addEventListener("click", () => {
   aboutBuyInner.classList.toggle("about__active");
 });
-
 function startTimer() {
   let minutes = 1;
   let seconds = 10;
